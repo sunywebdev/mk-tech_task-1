@@ -1,0 +1,57 @@
+.summaryBg {
+	background-color: #644f9c;
+}
+.summaryBg h2 {
+	color: white;
+	padding-top: 2rem;
+}
+.circle1 {
+	border-style: dashed;
+	border-color: white;
+	color: white;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.circle2 {
+	width: 20rem;
+	height: 20rem;
+	background-color: white;
+	color: #644f9c;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+.circle3 {
+	background-color: #ed6a49;
+	color: white;
+	width: 20rem;
+	height: 20rem;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.circle1 h1,
+.circle2 h1,
+.circle3 h1 {
+	font-size: 3.5rem;
+	font-weight: bold;
+	margin-top: 0.5rem;
+}
+.circle1 h4,
+.circle2 h4,
+.circle3 h4 {
+	font-size: 1.5rem;
+	font-weight: bold;
+	margin-top: 0.1rem;
+}
+.summaryGrid {
+	display: flex;
+	justify-content: space-evenly;
+}

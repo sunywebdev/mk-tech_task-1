@@ -1,0 +1,9 @@
+.bannerGrid {
+    text-align: left;
+	display: flex;
+	align-items: center;
+    justify-content: space-between;
+}
+.bannerGrid h3{
+    margin-top: 4rem;
+}

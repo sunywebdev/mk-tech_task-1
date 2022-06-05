@@ -1,0 +1,21 @@
+.infoIconGrid {
+	display: flex;
+	justify-content: space-evenly;
+}
+.infoIconGrid svg {
+	padding: 20px;
+	border-radius: 50%;
+	background-color: white;
+	fill: #1d4999;
+}
+.infoButton {
+	background-color: #644f9c;
+	color: white;
+	padding: 0.5rem 2.5rem;
+	border: 0;
+	border-radius: 25px;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	width: 18rem;
+	margin-top: 15px;
+}

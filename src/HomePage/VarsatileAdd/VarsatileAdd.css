@@ -1,0 +1,19 @@
+.AddrGrid {
+	text-align: left;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.AddrGrid h3 {
+	margin-top: 2rem;
+}
+.textPadding {
+	padding: 0.5rem 3rem;
+}
+.AddrGrid a {
+	font-size: 1.25rem;
+    text-decoration: none;
+}
+.AddrGrid svg {
+	width: 15px;
+}
