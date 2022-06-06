@@ -5,3 +5,33 @@
 .mainPadding {
 	padding: 3% 5% !important;
 }
+.dashedLine {
+	display: inline-block;
+	position: relative;
+	padding: 0 20px;
+	margin: 3rem 0;
+}
+.dashedLine:before,
+.dashedLine:after {
+	content: "";
+	display: block;
+	width: 100%;
+	position: absolute;
+	top: 0.73em;
+	border-top: 1px dotted black;
+}
+.dashedLine:before {
+	right: 100%;
+}
+.dashedLine:after {
+	left: 100%;
+}
+button:active {
+	box-shadow: 0 1px #666;
+	transform: translateY(1px);
+	color: white;
+}
+button:focus {
+	background-color: #ff6f00;
+	color: white;
+}

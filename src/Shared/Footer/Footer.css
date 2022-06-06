@@ -1,0 +1,29 @@
+.footerFlex {
+	display: flex;
+	justify-content: space-around;
+}
+.footerCol {
+	text-align: left;
+}
+.footerCol h4:nth-child(1) {
+	color: #1d4999;
+}
+.footerCol svg {
+	width: 21px;
+  height: 21px;
+	margin-right: 10px;
+	padding: 5px;
+	border-radius: 50%;
+}
+.footerCol .instagram {
+	background-color: #e1306c;
+	color: white;
+}
+.footerCol .facebook {
+	background-color: #3b5998;
+	color: white;
+}
+.footerCol .youtube {
+	background-color: #ff0000;
+	color: white;
+}

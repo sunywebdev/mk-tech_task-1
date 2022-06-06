@@ -1,43 +1,39 @@
 import React from "react";
 import "./ReviewSlider.css";
 import SingleSlide from "./SingleSlide";
+import img from "../../files/review.png";
 
 const ReviewSlider = () => {
 	const data = [
 		{
 			id: 1,
-			title: "POP-UNDER 1",
+			title: "Title 1",
 			text: "Hello, Here will be a text",
-			image:
-				"https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png",
+			image: img,
 		},
 		{
 			id: 2,
-			title: "POP-UNDER 2",
-			text: "Hello, Here will be a text",
-			image:
-				"https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png",
+			title: "Title 2",
+			text: "Hello here will be another text",
+			image: img,
 		},
 		{
 			id: 3,
-			title: "POP-UNDER 3",
-			text: "Hello, Here will be a text",
-			image:
-				"https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png",
+			title: "Title 3",
+			text: "Hello here will be another text",
+			image: img,
 		},
 		{
 			id: 4,
-			title: "POP-UNDER 4",
+			title: "Title 4",
 			text: "Hello, Here will be a text",
-			image:
-				"https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png",
+			image: img,
 		},
 		{
 			id: 5,
-			title: "POP-UNDER 5",
+			title: "Title 5",
 			text: "Hello, Here will be a text",
-			image:
-				"https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png",
+			image: img,
 		},
 	];
 	const [currentSlide, setCurrentSlide] = React.useState(0);

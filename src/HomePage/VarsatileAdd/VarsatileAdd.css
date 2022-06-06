@@ -2,7 +2,6 @@
 	text-align: left;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
 }
 .AddrGrid h3 {
 	margin-top: 2rem;
@@ -10,10 +9,58 @@
 .textPadding {
 	padding: 0.5rem 3rem;
 }
+
+.dashedLine h2 {
+	color: #644f9c;
+	text-align: center;
+	overflow: hidden;
+	margin: 0;
+	line-height: 1;
+}
+.addData {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: self-start;
+	height: 300px;
+}
+
+.addData h1 {
+	color: #ff6f00;
+}
 .AddrGrid a {
 	font-size: 1.25rem;
-    text-decoration: none;
+	text-decoration: none;
 }
 .AddrGrid svg {
 	width: 15px;
+}
+.addButtons {
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+}
+.addButton {
+	background-color: #644f9c;
+	color: white;
+	padding: 0.5rem 2rem;
+	border: 0;
+	border-radius: 25px;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	width: 15rem;
+	margin-top: 15px;
+	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+}
+.activeAddButton {
+	background-color: #ff6f00;
+	color: white;
+	padding: 0.5rem 2rem;
+	border: 0;
+	border-radius: 25px;
+	font-size: 1.5rem;
+	line-height: 2rem;
+	width: 15rem;
+	margin-top: 15px;
+	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
 }

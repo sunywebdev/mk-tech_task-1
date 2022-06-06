@@ -1,43 +1,66 @@
-import React from "react";
+import React, { useState } from "react";
+import Tab from "./Tab";
 import "./VarsatileAdd.css";
+import addImg from "../../files/adds.png";
 
 const VarsatileAdd = () => {
+	const data = [
+		{
+			id: 0,
+			title: "POP-UNDER",
+			text: "This is one of the most popular ads. After user’s click, this ad opens landing page in behind. So, the user experience is not hampered much.",
+			image: addImg,
+		},
+		{
+			id: 1,
+			title: "BANNER AD",
+			text: "Choose between the available banner formats. Highlyeffective ad for visibility.",
+			image: addImg,
+		},
+		{
+			id: 2,
+			title: "NATIVE",
+			text: "Ad format with the image and the title, that perfectly fits intothe content of the site.Native ads are placed in the most visible areas of the pageand, thus, this format shows good results and the level ofinteraction.",
+			image: addImg,
+		},
+		{
+			id: 3,
+			title: "SKIM",
+			text: "SKIM is a link that a publisher inserts on a specific siteelement, and after clicking on it, an advertisement appearsto the user.SKIM gives 100% control of your sold traffic amount, higherCR to advertisers and CPM rates to publishers.",
+			image: addImg,
+		},
+	];
+	const [tabs, setTabs] = useState(1);
 	return (
-		<div className='mainPadding'>
-			<div className='AddrGrid'>
-				<div className='textPadding'>
-					<img
-						style={{ width: "500px", height: "300px" }}
-						src='https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png'
-						alt=''
-					/>
-				</div>
-				<div>
-					<h1>POP-UNDER</h1>
-					<h3>
-						This is one of the most popular ads. After user’s click, this ad
-						opens landing page in behind. So, the user experience is not
-						hampered much.
-					</h3>
-					<div>
-						<a href='/'>
-							Learn more{" "}
-							<svg
-								aria-hidden='true'
-								focusable='false'
-								data-prefix='fas'
-								data-icon='arrow-up-right-from-square'
-								class='svg-inline--fa fa-arrow-up-right-from-square '
-								role='img'
-								xmlns='http://www.w3.org/2000/svg'
-								viewBox='0 0 448 512'>
-								<path
-									fill='currentColor'
-									d='M256 64C256 46.33 270.3 32 288 32H415.1C415.1 32 415.1 32 415.1 32C420.3 32 424.5 32.86 428.2 34.43C431.1 35.98 435.5 38.27 438.6 41.3C438.6 41.35 438.6 41.4 438.7 41.44C444.9 47.66 447.1 55.78 448 63.9C448 63.94 448 63.97 448 64V192C448 209.7 433.7 224 416 224C398.3 224 384 209.7 384 192V141.3L214.6 310.6C202.1 323.1 181.9 323.1 169.4 310.6C156.9 298.1 156.9 277.9 169.4 265.4L338.7 96H288C270.3 96 256 81.67 256 64V64zM0 128C0 92.65 28.65 64 64 64H160C177.7 64 192 78.33 192 96C192 113.7 177.7 128 160 128H64V416H352V320C352 302.3 366.3 288 384 288C401.7 288 416 302.3 416 320V416C416 451.3 387.3 480 352 480H64C28.65 480 0 451.3 0 416V128z'></path>
-							</svg>
-						</a>
-					</div>
-				</div>
+		<div className='mainPadding addPage'>
+			<div className='dashedLine'>
+				<h2>VERSATILE AD FORMATS</h2>
+			</div>
+
+			<div className='addButtons'>
+				<button
+					className={tabs === 0 ? "activeAddButton" : "addButton"}
+					onClick={() => setTabs(0)}>
+					POP-UNDER
+				</button>
+				<button
+					className={tabs === 1 ? "activeAddButton" : "addButton"}
+					onClick={() => setTabs(1)}>
+					BANNER AD{" "}
+				</button>
+				<button
+					className={tabs === 2 ? "activeAddButton" : "addButton"}
+					onClick={() => setTabs(2)}>
+					NATIVE
+				</button>
+				<button
+					className={tabs === 3 ? "activeAddButton" : "addButton"}
+					onClick={() => setTabs(3)}>
+					SKIM
+				</button>
+			</div>
+			<div>
+				<Tab data={data[tabs]} />
 			</div>
 		</div>
 	);

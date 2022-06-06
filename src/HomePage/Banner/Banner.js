@@ -1,5 +1,6 @@
 import React from "react";
 import "./Banner.css";
+import img from "../../files/title.png";
 
 const Banner = () => {
 	return (
@@ -10,11 +11,7 @@ const Banner = () => {
 					<h3>Here will be a text</h3>
 				</div>
 				<div>
-					<img
-						style={{ width: "500px", height: "300px" }}
-						src='https://masterkey-assignment-01.netlify.app/static/media/advertisement.99456113d960ac0b467e.png'
-						alt=''
-					/>
+					<img style={{ width: "500px", height: "300px" }} src={img} alt='' />
 				</div>
 			</div>
 		</div>

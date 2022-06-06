@@ -1,0 +1,59 @@
+.NavPadding {
+	padding: 1% 5% !important;
+}
+.activeUrl {
+	color: #ff6f00;
+}
+.navTop {
+	display: flex;
+	justify-content: space-between;
+}
+.navLinks {
+	display: flex;
+}
+.active {
+	color: green;
+}
+.navLinks a {
+	margin-right: 1rem;
+	text-decoration: none;
+	font-size: medium;
+	color: #644f9c;
+}
+.navLinks a:focus {
+	color: #ff6f00;
+}
+.navButtons {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.userLogin {
+	background-color: white;
+	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+	width: max-content;
+	border: 0;
+	border-radius: 25px;
+	padding: 2px;
+}
+.userLogin button {
+	background-color: #ff6f00;
+	color: white;
+	padding: 0.3rem 1.5rem;
+	border: 0;
+	border-radius: 25px;
+	line-height: 2rem;
+	margin: 5px;
+	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+}
+.userLogin .btn {
+	background-color: transparent;
+	color: black;
+	padding: 0.3rem 1.5rem;
+	border: 0;
+	border-radius: 25px;
+	line-height: 2rem;
+	margin: 5px;
+	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+}
