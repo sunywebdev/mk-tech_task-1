@@ -31,7 +31,7 @@
 
 .userLogin {
 	background-color: white;
-	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+	box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.43);
 	width: max-content;
 	border: 0;
 	border-radius: 25px;
@@ -45,7 +45,7 @@
 	border-radius: 25px;
 	line-height: 2rem;
 	margin: 5px;
-	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+	box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.43);
 }
 .userLogin .btn {
 	background-color: transparent;
@@ -55,5 +55,5 @@
 	border-radius: 25px;
 	line-height: 2rem;
 	margin: 5px;
-	box-shadow: 4px 5px 6px -1px rgba(0, 0, 0, 0.43);
+	box-shadow: 2px 2px 6px -1px rgba(0, 0, 0, 0.43);
 }
