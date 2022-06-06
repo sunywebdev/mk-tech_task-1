@@ -48,6 +48,7 @@ const ReviewSlider = () => {
 				}}>
 				{data.map((item) => (
 					<div
+						key={item?.id}
 						className={`${
 							currentSlide === item?.id ? "dotActive" : "dot"
 						}`}></div>
@@ -55,7 +56,7 @@ const ReviewSlider = () => {
 			</div>
 			<div style={{ display: "flex", justifyContent: "space-around" }}>
 				{data.slice(currentSlide, currentSlide + 2).map((item) => (
-					<SingleSlide item={item} />
+					<SingleSlide key={item?.id} item={item} />
 				))}
 			</div>
 			<div className='sliderButton'>

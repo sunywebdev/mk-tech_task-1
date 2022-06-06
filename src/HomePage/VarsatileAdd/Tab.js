@@ -25,7 +25,6 @@ const Tab = ({ data }) => {
 								focusable='false'
 								data-prefix='fas'
 								data-icon='arrow-up-right-from-square'
-								class='svg-inline--fa fa-arrow-up-right-from-square '
 								role='img'
 								xmlns='http://www.w3.org/2000/svg'
 								viewBox='0 0 448 512'>

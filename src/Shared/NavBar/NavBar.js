@@ -68,7 +68,7 @@ const NavBar = () => {
 			<div className='navButtons'>
 				<div className='navLinks'>
 					{urls?.map((url) => (
-						<h5>
+						<h5 key={url?.id}>
 							<a href={url?.url}>{url?.name}</a>
 						</h5>
 					))}
